@@ -1,0 +1,60 @@
+elem_scroll=//div[@id='divOurSpaceCarasoulContainer']//i[@class='fa fa-chevron-right']
+elem_UATLogin=//input[@type='email']
+uat_login=4338_prahlad.gond@spaceuat.com
+uat_next=//input[@id='idSIButton9']
+uat_pw=//input[@id='i0118']
+Password=Spcpl@2018
+uat_signin=//input[@id='idSIButton9']
+CMS=//span[@class='Moduled_name'][normalize-space()='CMS']
+elem_globalSearch=//input[@id='txtGlobalSearch']
+elem_searchFunnel=//span[@class='material-symbols-outlined']
+elem_verticalDropdown=//select[@id='_ddlVertical']
+elem_loader=//div[@id='loader']
+elem_loaderHide=//div[@class='loader hide']
+elem_projectInfo=//input[@id='ProjectInfo']
+elem_btnSearch=//button[@id='btnCommonSearch']
+elem_view=//i[normalize-space()='visibility'] 
+elem_contractualDate=//input[@id='ContractualDateFrom'] 
+elem_currentDate=//div[@class='dcalendarpicker dcalendarpicker-dropdown-bottom-top dropdown-menu'][contains(@style,'display: block')] //td[@class='day today active'][1]
+
+elem_save=//button[@title='Save']
+elem_description=//input[@id='Description']
+elem_address=//input[@id='Address'] 
+elem_succesmessage=//form[@id='frmSaveProjectDetails']//div[@id='divSuccessMessageContainer']
+-------------------------------------------------------------------Contract Tab ----------------------------------------------------------
+elem_contratTab=//a[normalize-space()='Contract Header Info'] 
+elem_clienType=//select[@id="ddlClientType"]
+elem_Sector=//select[@id="ddlSector"]
+elem_TypeOfContract=//select[@id="ddlTypeofContract"] 
+elem_contractModel=//select[@id="ddlContractModel"] 
+elem_nameOfContract=//input[@id="NameofContract"]
+elem_contractduration=//input[@id="ContractDuration"] 
+elem_contractnumber=//input[@id="ContractNo"]
+elem_originalContractvalue=//input[@id="OriginalContractValue"] 
+elem_sector=//label[@class='radio'][normalize-space()='Airport']
+elem_contractTab=//a[normalize-space()='Contract Header Info']
+elem_contractTabSave=(//button[@title="Save"])[2]
+
+--------------------------------------------------Key Dates----------------------------------------------------------------------------------
+elem_keyValueDates=//li[@id='keycontract']
+elem_browseBtn=//input[@name='BidSubmissionDate']/following::span[@Class='input-group-btn'][1]
+elem_btnUpload=(//*[@id="btnUpload"])[1]
+elem_save1=(//button[@title='Save'])[2]
+elem_confirmatorySave=//span[normalize-space()='check']
+---------------------------------------------------Contract Document---------------------------------------------------------------------
+elem_contractTab=//a[@href='#ContractDocuments']
+elem_addcontract=//button[@id='btnAddContractDocument'] 
+elem_titlecontract=//input[@id='_txtDocumentTitle_0']
+elem_descriptioncontract=//textarea[@id='_txtDocumentDescription_0']
+elem_contractDocumentdate=//input[@id='_txtContractDocumentDate_0']
+elem_browseButton=//button[@id='btnBrowseContractDocUpload']
+elem_documentVersion=//select[@id="_ContractDocumentversion_0"]
+elem_documentType=//select[@id="_ContractDocumenttype_0"]
+elem_uploadButton=//button[@id='btnBrowseContractDocUpload']
+elem_attachmentDescid=//input[@id='attachmentDescId']
+elem_fileUpload=//i[normalize-space()='file_upload']
+elem_Save=//span[normalize-space()='Save']
+
+---------------------------------------------------Success Messages---------------------------------------------------------------------
+success_MessageProjectDetails=Project details updated successfully. 
+success_ContractSailentFeatures=Contract header info updated successfully.

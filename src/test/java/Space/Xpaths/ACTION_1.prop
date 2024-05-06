@@ -1,0 +1,37 @@
+Username=//input[@id='EmailId']
+Password=//input[@id='Password']
+un1=6298_SPACE_LN_098452@itcubedev.dev
+pw1=ITCube@098452
+un=prutha@itcubedev.dev 
+pw=ITCube@48
+LoginButton=//button[normalize-space()='Login']
+Action_Xpath = //span[@class='Moduled_name'][normalize-space()='Action']
+nextButton_Xpath=//div[@id='divOurSpaceCarasoulContainer']//i[@class='fa fa-chevron-right']
+Serchbutton=//*[@id='lnkFilterIconContainer']/span
+Advancebutton=//*[@id='AdvanceSearchShowHideID']
+StatusDropdown=//*[@id='frmSearchMeetingIssue']/div[3]/div/div[12]/div/span/div/button
+Draft_select=//*[@id='frmSearchMeetingIssue']/div[3]/div/div[12]/div/span/div/ul/li[3]/a/label/input
+SerchMeeting=//*[@id='btnSerchMeeting']/span[2]
+MID = 2310/000076
+MeetingID=//*[@id="txtMeetingId"]
+MIDget=//*[@id="meetingSearch"]/div[2]/div/div/div[1]/table/tbody/tr[2]/td[1]/div[1]/text()
+ETMRadio=//*[@id="EscalatedToMeMeeting"]
+ETMButton=//*[@id="btnSerchIssue"]
+ETMun=289_akhil_ln_929028@itcubedev.dev
+ETMpw=ITCube@929028
+ETMIDPath = //*[@id="issueSearch"]/div[2]/div/div/div[1]/table/tbody/tr[2]/td[1]/div
+ETMID=2212/0000001
+Scheduled_select=//*[@id='frmSearchMeetingIssue']/div[3]/div/div[12]/div/span/div/ul/li[4]/a/label/input
+SMID =2312/000026
+OPM =//*[@id="meetingSearch"]/div[2]/div/div/div[1]/table/tbody/tr[2]/td[8]/a/i
+MTime =//*[@id="StartTime"]
+MIDcompare=//*[@id='meetingSearch']/div[2]/div/div/div[1]/table/tbody/tr[2]/td[1]/div[1]
+ETMIDcompare=//*[@id='issueSearch']/div[2]/div/div/div[1]/table/tbody/tr[2]/td[1]/div
+StartDate=_txtStartDate
+StartTime=StartTime
+LogoutNavigation=//*[@id=\"mainBody\"]/header/nav/div[3]/ul/li/a/span[2]
+LogoutButtibe=//*[@id=\"mainBody\"]/header/nav/div[3]/ul/li/ul/li[3]/div[2]/a
+POPuP=//*[@id="_divSearchMeeting"]/section[2]/div[1]/div[2]
+Grid=//*[@id="_divSearchMeeting"]/section[1]/h1	
+newshe=//*[@id="frmSearchMeetingIssue"]/div[3]/div/div[12]/div/span/div/ul/li/label[text()="Scheduled"]/input[@type="checkbox"]
+

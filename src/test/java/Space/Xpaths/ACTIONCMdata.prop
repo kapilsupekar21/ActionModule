@@ -1,0 +1,9 @@
+startDate0=  30/11/2024
+startTime0 = 10:00
+endDate0 = 30/11/2024;
+endTime0 = 10:30
+
+elem_verticalContracting=//label[normalize-space()='X']
+elem_verticaldata0=Water|Contracting|bricks
+elem_searchTextMember=//input[@class='form-control multiselect-search' and @type='text']
+elem_searchTextMember1=//*[@id="actionRequestContainer"]/div[9]/div/span/div/ul/li[1]/div/input

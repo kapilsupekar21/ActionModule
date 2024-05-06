@@ -1,0 +1,139 @@
+Username=//input[@id='EmailId']
+Password=//input[@id='Password']
+Data_Meetingmenber=20
+un=6298_SPACE_LN_098452@itcubedev.dev
+pw=ITCube@098452
+LoginButton=//button[normalize-space()='Login']
+VerifyText=//strong[normalize-space()='List of Meeting']
+VerifySuccessText=List Of Meeting
+elem_newMeeting=(//span[normalize-space()='Add Meeting'])[1]
+elem_meetingType=//select[@id="_ddlRequestType"]/following-sibling::div/button/span
+elem_reqType=//label[normalize-space()='Meeting']
+elem_subType=//select[@id="_ddlRequestSubType"]/following-sibling::div/button/span
+elem_reqSubType=//label[normalize-space()='Client Meeting']
+elem_category=//select[@id="_ddlCategory"]/following-sibling::div/button/span
+elem_categoryType=//label[normalize-space()='Internal']
+elem_topic=//input[@id='_txtTopic']
+elem_description=//textarea[@id='_txtDescription']
+elem_location=//input[@id='txtRequestLocation']  
+elem_startDate=//input[@id='_txtStartDate']
+elem_startTime=//input[@id='StartTime']
+elem_endDtae=//input[@id='_txtEndDate']
+elem_endTime=//input[@id='EndTime'] 
+elem_vertical=//select[@id="_ddlVertical"]/following-sibling::div/button/span
+elem_region=//select[@id="_ddlRegion"]/following-sibling::div/button/span
+elem_regionselect=//label[normalize-space()='Bengaluru']
+elem_Project=//select[@id="_ddlProject"]/following-sibling::div/button/span
+elem_ProjectSelect=//label[normalize-space()='081-Admin project']
+elem_Function=//select[@id="_ddlFunction"]/following-sibling::div/button/span
+elem_functionSelect=//label[normalize-space()='Accounts']
+elem_verticalContracting=//label[normalize-space()='Contracting']
+elem_createMeeting=//span[normalize-space()='Create Meeting']
+elem_successMessage=//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']
+success_verification=Record saved successfully.
+elem_backButton=//span[normalize-space()='arrow_back']
+elem_meetingid=//input[@id='_txtMeetingNumber']
+elem_DraftVerify=//*[@id="divCommonSearchResultContainer"]/div[1]/div/div/table/tbody/tr/td[6]/div
+elem_globalsearch=//input[@id='txtGlobalSearch']
+elem_edit=//a[@title='Edit']
+elem_searchTextMember=//input[@id='txtSearchControl']
+elem_addMemberButton=//i[normalize-space()='add_circle']
+elem_addMemberSuccessMessage=//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']
+elem_addExternalUser=//input[@id='txtStakeholderName']
+elem_emailIDExternalUser=//input[@id='txtEmailId']
+elem_addMember=//span[normalize-space()='Ms Vrushali Kemekar (51)']
+elem_addExternal=//input[@id='_chkExternal']
+elem_addTopic=//textarea[@id='txtAgendaTopic'] 
+elem_advancedSearchButton=(//input[@id='AdvanceSearchShowHideID'])[1]
+elem_inputmeetingid=(//input[@id='txtMeetingId'])[1]
+elem_searchMeeting=//button[@id='btnSerchMeeting']
+elem_statusVerify=//span[@class='label-inactive']
+elem_filter=//a[@id='lnkFilterIconContainer']
+elem_advance_search=(//input[@id='AdvanceSearchShowHideID'])[1]
+elem_input_meeting_ID=(//input[@id='txtMeetingId'])[1]
+elem_search_meeting=//button[@id='btnSerchMeeting']
+elem_S_save=//button[@title='Save']
+--------------------------------------------Raghu Xpaths------------------------------------------------------------------------------
+---Search meeting----
+elem_newMeeting=(//span[normalize-space()='Add Meeting'])[1]
+elem_filter=//a[@id='lnkFilterIconContainer']
+elem_advance_search=(//input[@id='AdvanceSearchShowHideID'])[1]
+elem_input_meeting_ID=(//input[@id='txtMeetingId'])[1]
+elem_search_meeting=//button[@id='btnSerchMeeting']
+elem_R_edit=//a[@title='Edit']
+elem_R_delete_member1 =(//a[@id='_anchorDeleteMember'])[1]  
+elem_R_delete_member2=(//a[@id='_anchorDeleteMember'])[2]
+elem_R_searchTextMember=//input[@id='txtSearchControl']
+search_R_member1=//input[@node-text="Mr Anuj Kumar LN_291163 (291163)"]
+elem_R_addMember=//a[@id='addStakeholderLink']
+elem_R_addExternal=//input[@id='_chkExternal']
+elem_R_emailIDExternalUser=//input[@id='txtEmailId']
+elem_R_addMemberButton=//i[normalize-space()='add_circle']
+elem_R_addMemberSuccessMessage=(//*[@id="divSuccessMessageContainer"])[1]
+elem_R_back1=//button[@title='Back']
+elem_R_sendinvite=//button[@id='_btnSendInvitation']
+elem_Opening Note=//*[@id="_txtOpeningNote"]
+elem_Concluding Note=//*[@id="_txtConcludedNote"]
+elem_savenote=//*[@id="_btnAddNotes"]/span[2]
+elem_R_point/observation_testbox =(//div[@class="note-editable"])[3]
+elem_R_action_Suggested = (//div[@class="note-editable"])[4]
+elem_R_actionby= //input[@parent-id='AddActionUserActionBy']
+elem_R_addmember_action= (//input[@node-text="Mr Anuj Kumar LN_291163 (291163)"])[1]
+elem_select_user=//*[@id="liDataListContainer"]/ul[1]/li[2]/a/label/input
+elem_R_add_button=//*[@id="btnAddNewActionBy"]/span[2]
+elem_R_select_date=//*[@id="_txtCompleteByDate"]
+elem_R_raisedby=//input[@parent-id="AddActionUserActionRaisedBy"]
+elem_R_select_raisedby =//input[@node-text="Mr Raghu LN_096006 (096006)"]
+elem_R_save1=//button[@id="_btnSaveMeetiingActionPoint"]
+
+elem_R_back1=//button[@title='Back']
+elem_R_loader=//*[@id="svg62"]
+-------------------------------------------------------------Kapil Xptahs-------------------------------------------------------------
+elem_loader=//*[@id="svg62"]
+elem_SearchFilter=//*[@id='lnkFilterIconContainer']/span
+elem_Reset=//*[@id="frmSearchMeetingIssue"]/div[4]/div/div/button[3]/span[2]
+elem_Advancebutton=//*[@id='AdvanceSearchShowHideID']
+MeetingID=//*[@id="txtMeetingId"]
+elem_StatusDropdown=//*[@id='frmSearchMeetingIssue']/div[3]/div/div[12]/div/span/div/button
+elem_Meeting_StatusXpath=//li[a/label[contains(text(), 'X')]]/a/label/input[@type='checkbox']
+elem_SerchMeeting=//*[@id='btnSerchMeeting']/span[2]
+elem_MIDgettextStatus=//*[@id="meetingSearch"]/div[2]/div/div/div[1]/table/tbody/tr[2]/td[6]/span
+elem_OPM =//*[@id="meetingSearch"]/div[2]/div/div/div[1]/table/tbody/tr[2]/td[8]/a/i
+elem_StartDate=_txtStartDate
+elem_StartTime=StartTime
+elem_Start_Meeting=//*[@id="_btnStartMeeting"]
+elem_MeetingGrid=//table[@class='table tablesorter'] 
+elem_Meetingtext=//*[@id=\"_divManageActionPoint\"]/section[1]/h1
+elem_ETMRadio=//*[@id="EscalatedToMeMeeting"]
+elem_ETMButton=//*[@id="btnSerchIssue"]
+elem_ETMIDPath = //*[@id="issueSearch"]/div[2]/div/div/div[1]/table/tbody/tr[2]/td[1]/div
+elem_ETMIDcompare=//*[@id='issueSearch']/div[2]/div/div/div[1]/table/tbody/tr[2]/td[1]/div
+elem_Scheduled_select=//li[a/label[contains(text(), 'Scheduled')]]/a/label/input[@type='checkbox']
+elem_MIDgettext=//*[@id='meetingSearch']/div[2]/div/div/div[1]/table/tbody/tr[2]/td[1]/div[1]
+elem_Action_Xpath = //span[@class='Moduled_name'][normalize-space()='Action']
+elem_nextButton_Xpath=//div[@id='divOurSpaceCarasoulContainer']//i[@class='fa fa-chevron-right']
+elem_LogoutNavigation=//*[@id=\"mainBody\"]/header/nav/div[3]/ul/li/a/span[2]
+elem_LogoutButton=//*[@id=\"mainBody\"]/header/nav/div[3]/ul/li/ul/li[3]/div[2]/a
+etmun=289_akhil_ln_929028@itcubedev.dev
+ETMpw=ITCube@929028
+Data_ETMID=2212/0000001
+Data_Meeting_Start=YES
+Data_Meeting_Status=Draft
+MTMRadio=//*[@id="MyTeamMeeting"]
+RBMRadio=//*[@id="RaisedByMeMeeting"]
+==========================================manasi
+elem_RBMRadio=//*[@id="RaisedByMeMeeting"]
+elem_MTMRadio=//*[@id="MyTeamMeeting"] 
+elem_ProjectNameXpath=//*[@id="frmSearchMeetingIssue"]/div[3]/div/div[10]/div/span/div/ul/li[6]
+elem_roleDropdown=//*[@id="_divStakHolderRole"]/span/div/button
+Meetingtext=//*[@id=\"_divManageActionPoint\"]/section[1]/h1
+Reset=//*[@id="frmSearchMeetingIssue"]/div[4]/div/div/button[3]/span[2]
+loader=//*[@id="svg62"]
+MTMRadio=//*[@id="MyTeamMeeting"]
+RBMRadio=//*[@id="RaisedByMeMeeting"]
+SearchFilter=//*[@id='lnkFilterIconContainer']/span
+ProjectDropdown=//*[@id='frmSearchMeetingIssue']/div[3]/div/div[10]/div/span/div/button
+ProjectNameXpath=//*[@id="frmSearchMeetingIssue"]/div[3]/div/div[10]/div/span/div/ul/li[6]
+elem_Project=//select[@id="_ddlProject"]/following-sibling::div/button/span
+elem_ProjectSelect=//label[normalize-space()='081-Admin project']
+MeetingID=//*[@id="txtMeetingId"]

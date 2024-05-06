@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Tests.Cleanup" class="method navigator-link" hash-for-method="CleanupTest">CleanupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Tests.Setup" class="method navigator-link" hash-for-method="Initialize">Initialize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Tests.ActionTests" class="method navigator-link" hash-for-method="loginAsAdmin(http://192.168.10.172:2021/Account/Login)">loginAsAdmin(http://192.168.10.172:2021/Account/Login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.Cleanup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CleanupTest">
+                  </a> <!-- CleanupTest -->
+                  <span class="method-name">CleanupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.Setup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Initialize">
+                  </a> <!-- Initialize -->
+                  <span class="method-name">Initialize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.ActionTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin(http://192.168.10.172:2021/Account/Login)">
+                  </a> <!-- loginAsAdmin(http://192.168.10.172:2021/Account/Login) -->
+                  <span class="method-name">loginAsAdmin</span>
+                  <span class="parameters">(http://192.168.10.172:2021/Account/Login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/admin/Desktop/kapil_ItCube/Kapil/SOFTWARE/Automation/Zooplus/ActionModule/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;http://192.168.10.172:2021/Account/Login&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.Setup&quot;/&gt;
+      &lt;class name=&quot;Tests.ActionTests&quot;/&gt;
+      &lt;class name=&quot;Tests.Cleanup&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginAsAdmin')
+data.setCell(0, 2, 'Tests.ActionTests')
+data.setCell(0, 3, 348129);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Initialize')
+data.setCell(1, 2, 'Tests.Setup')
+data.setCell(1, 3, 7644);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CleanupTest')
+data.setCell(2, 2, 'Tests.Cleanup')
+data.setCell(2, 3, 1);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginAsAdmin(http://192.168.10.172:2021/Account/Login)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='EmailId']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='EmailId']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='EmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='EmailId']", content: "6298_SPACE_LN_098452@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='Password']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='Password']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='Password']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='Password']", content: "ITCube@098452"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//button[normalize-space()='Login']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//button[normalize-space()='Login']"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="Moduled_name">Action</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="Moduled_name">Action</span><br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "(//span[normalize-space()='Add Meeting'])[1]"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "(//span[normalize-space()='Add Meeting'])[1]"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//label[normalize-space()='Meeting']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//label[normalize-space()='Meeting']"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//label[normalize-space()='Client Meeting']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//label[normalize-space()='Client Meeting']"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//label[normalize-space()='Internal']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//label[normalize-space()='Internal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_txtTopic']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='_txtTopic']", content: " Sandeep Automation Testing Dont Edit"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//textarea[@id='_txtDescription']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//textarea[@id='_txtDescription']", content: "Automation Regression Suite"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtRequestLocation']  "<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtRequestLocation']  ", content: "Automation online Call"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_txtStartDate']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='_txtStartDate']", content: "30/11/2024"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='StartTime']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='StartTime']", content: "10:00"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_txtEndDate']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='_txtEndDate']", content: "30/11/2024;"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='EndTime'] "<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='EndTime'] ", content: "10:30"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="actionRequestContainer"]/div[9]/div/span/div/ul/li[1]/div/input"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//*[@id="actionRequestContainer"]/div[9]/div/span/div/ul/li[1]/div/input", content: "Water"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="actionRequestContainer"]/div[9]/div/span/div/ul/li[1]/div/input"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//*[@id="actionRequestContainer"]/div[9]/div/span/div/ul/li[1]/div/input", content: "Contracting"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="actionRequestContainer"]/div[9]/div/span/div/ul/li[1]/div/input"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//*[@id="actionRequestContainer"]/div[9]/div/span/div/ul/li[1]/div/input", content: "bricks"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//label[normalize-space()='Bengaluru']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//label[normalize-space()='Bengaluru']"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//label[normalize-space()='081-Admin project']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//label[normalize-space()='081-Admin project']"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Select</span><br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//label[normalize-space()='Accounts']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//label[normalize-space()='Accounts']"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="multiselect-selected-text">Accounts</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="multiselect-selected-text">Accounts</span><br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//span[normalize-space()='Create Meeting']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//span[normalize-space()='Create Meeting']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Brijendra LN_001300"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Appalanaidu LN_002088"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Sheshnath LN_003406"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "1902_Ankush_LN_006523@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Ankush LN_006523"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Some other element is hogging the limelight; so waiting a bit...<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "88855_Kannadhasan_LN_007176@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Kannadhasan LN_007176"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Bikramjit LN_012212"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Suman LN_012686"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "16907_Prasanta_Kumar_LN_015167@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Prasanta  Kumar LN_015167"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Some other element is hogging the limelight; so waiting a bit...<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "2400_Sandip_LN_015529@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Sandip LN_015529"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "5649_Atul_LN_015675@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Atul LN_015675"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "6540_Selva_LN_016239@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Selva LN_016239"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Some other element is hogging the limelight; so waiting a bit...<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "37277_Anil_Kumar_LN_016590@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Anil Kumar LN_016590"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Roshan LN_021890"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Pradeep Kumar LN_023993"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "88559_Qureshi_LN_026901@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Qureshi LN_026901"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Some other element is hogging the limelight; so waiting a bit...<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "88565_Selva_LN_027589@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Selva LN_027589"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Haribandhu LN_027744"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//input[@id='_chkExternal']"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtEmailId']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtEmailId']", content: "6819_Jitendra_LN_028700@itcubedev.dev"<br /></span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtStakeholderName']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtStakeholderName']", content: "Jitendra LN_028700"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Jitendra LN_028700"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//input[@id='txtSearchControl']"<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//input[@id='txtSearchControl']", content: "Shrikrishna LN_029474"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="liDataListContainer"]/ul/li[2]/a/label/input"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//*[@id="_divStakHolderRole"]/span/div/button"<br /></span>
+                <span class="reporter-method-output">Attempting to click..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement: "//i[normalize-space()='add_circle']"<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//form[@id='frmSaveRequest']//div[@id='divSuccessMessageContainer']"<br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to type..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with xpath: "//textarea[@id='txtAgendaTopic'] "<br /></span>
+                <span class="reporter-method-output">Typed successfully into WebElement: "//textarea[@id='txtAgendaTopic'] ", content: "Adding Topic For Automation Testing"<br /></span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <button type="button" class="btn btn-primary same_line_rt_btn float-end" title="Save" onclick="ACTIONREQUEST.CreateActionRequest.createAgendas()"><span class="material-symbols-outlined">save</span><span class="btn_title_span">Save</span> </button><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <button type="button" class="btn btn-primary same_line_rt_btn float-end" title="Save" onclick="ACTIONREQUEST.CreateActionRequest.createAgendas()"><span class="material-symbols-outlined">save</span><span class="btn_title_span">Save</span> </button><br /></span>
+                <span class="reporter-method-output">Test Verification Passed</span>
+                <span class="reporter-method-output">Attempting to click via JS..<br /></span>
+                <span class="reporter-method-output">Waited successfully for element with outerHTML: <span class="material-symbols-outlined">arrow_back</span><br /></span>
+                <span class="reporter-method-output">Clicked successfully on WebElement via JS: <span class="material-symbols-outlined">arrow_back</span><br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Setup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ActionTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testsetup</span>
+                <span class="method-start">7647 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin(http://192.168.10.172:2021/Account/Login)</span>
+                <span class="method-start">7651 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Cleanup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CleanupTest</span>
+                <span class="method-start">355784 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
